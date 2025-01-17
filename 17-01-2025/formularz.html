@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        #wyk {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://localhost/17-01-2025/formularz.php" method="post">
+    <p>Formularz Kontaktowy</p>
+    Nazwisko: <br>
+    <input type="text" name="nazw" size="30"><br>
+    Imię: <br>
+    <input type="text" name="im" size="30"><br>
+    Zawód:<br>
+    <input type="text" name="zaw" value=" " size="30"><br>
+    Adres e-mail:<br>
+    <input type="text" name="adr" value=" " size="30">
+    <p id="wyk">Wykształcenie:</p>
+    <input type="radio" value="podstawowe" name="wykszt" checked> Podstawowe<br>
+    <input type="radio" value="średnie" name="wykszt"> Średnie<br>
+    <input type="radio" value="wyższe" name="wykszt"> Wyższe<br><br>
+    <input type="checkbox" name="opcje" maxlength="1">
+    Zgadzam się na przetwarzanie moich danych osobowych<br><br>
+    <input type="submit" value="Wyślij" name="wyslij">&nbsp; &nbsp;
+    <input type="reset" value="Wyczyść" name="zeruj">
+    </form
+
+</body>
+</html>
