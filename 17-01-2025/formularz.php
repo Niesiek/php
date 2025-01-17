@@ -8,4 +8,3 @@ if (empty($_POST["opcje"])){
     echo $_POST["adr"] . "<br>";
     echo "Zostało wybrane wykształcenie: " . $_POST["wykszt"];
 }
-?>
