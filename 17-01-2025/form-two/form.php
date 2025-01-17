@@ -8,5 +8,5 @@ if (!empty($_POST['jezyki'])) {
     echo "</ul>";
     } else {
     echo "<p><b>".$_POST['nazw']."</b> nie zna żadnego języka.</p>";
-    }
+
 }
