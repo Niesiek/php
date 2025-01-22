@@ -22,7 +22,7 @@ if(mysqli_query($conn, $tabelasql)){
 </tr>";
     while($row = mysqli_fetch_assoc($result)){
         echo "<tr>
-<td>".$row['id']."</td>
+<td>".$row['iduzyskiwski']."</td>
 <td>".$row['imie']."</td>
 <td>".$row['nazwisko']."</td>
 <td>".$row['wiek']."</td>

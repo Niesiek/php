@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
     $name = $_POST['nowe_imie'];
 
-    $sql = "UPDATE uzyskowski set imie = '$name' WHERE id = $id";
+    $sql = "UPDATE uzyskowski set imie = '$name' WHERE iduzyskiwski = $id";
 
     if (mysqli_query($conn, $sql)) {
         echo "Imię zostało zaktualizowane";

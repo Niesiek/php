@@ -13,7 +13,7 @@ echo "Połączono z bazą danych <br>";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $id = $_POST['id'];
 
-    $sql = "DELETE FROM uzyskowski WHERE id = '$id'";
+    $sql = "DELETE FROM uzyskowski WHERE iduzyskiwski = '$id'";
 
     if(mysqli_query($conn, $sql)){
         echo "Uzytkownik usunięty!";
