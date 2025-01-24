@@ -9,7 +9,18 @@
 </head>
 <body class="bg-dark text-light">
 
+<nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./">Asset Manager</a>
+    </div>
+</nav>
+
+
 <div class="container my-5">
+    <div class="d-flex justify-content-end">
+        <button onclick="window.history.back()" class="btn btn-primary">Cofnij</button>
+    </div>
+
     <h1 class="text-center mb-4">Dodaj Nowy Asset</h1>
     <form action="create.php" method="POST" class="p-4 bg-secondary rounded">
         <div class="mb-3">
@@ -35,6 +46,7 @@
         <button type="submit" class="btn btn-primary">Dodaj Asset</button>
     </form>
 </div>
+
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
