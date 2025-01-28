@@ -13,12 +13,12 @@
 <body class="bg-dark text-light">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom">
     <div class="container fluid">
-        <a class="navbar-brand" href="./">Asset Manager</a>
+        <a class="navbar-brand" href="../index.php">Asset Manager</a>
     </div>
 </nav>
 <div class="container">
     <h2 style="text-align: center">Login</h2>
-    <form action="index.php" method="post">
+    <form action="../index.php" method="post">
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
@@ -27,6 +27,7 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="password">
         </div>
+        <button type="submit" class="btn btn-primary">Zaloguj</button>
     </form>
 </div>
 <!-- PHP Script -->
@@ -44,7 +45,7 @@
 
         $query = "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password'";
         if(mysqli_query($conn, $query)){
-            header('location: ../../index.php');
+            header('location: /AssetMenager/index.php');
             exit();
         }else{
             echo "<h1>Błąd podczas Logowania</h1>";
